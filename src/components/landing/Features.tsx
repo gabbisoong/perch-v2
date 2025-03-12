@@ -261,7 +261,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   }
 
   return (
-    <div ref={sectionRef} className="bg-[#F6F6F6] rounded-[32px] px-16 pt-8 pb-0 shadow-[0_20.65px_25.94px_4.98px_rgba(0,0,0,0.07)] max-w-[1200px] mx-auto relative overflow-hidden border border-black/[0.06] mb-24">
+    <div ref={sectionRef} className="bg-[#F6F6F6] rounded-[32px] px-6 md:px-16 pt-8 pb-0 shadow-[0_20.65px_25.94px_4.98px_rgba(0,0,0,0.07)] max-w-[1200px] mx-auto relative overflow-hidden border border-black/[0.06] mb-24">
       {label === "AI Audio" ? (
         <div className="absolute inset-0 bg-[url('/Audio-gradient.png')] bg-cover bg-bottom opacity-100"></div>
       ) : label === "Playlists" ? (
@@ -270,8 +270,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
         <div className="absolute inset-0 bg-[url('/Reading-gradient.png')] bg-cover bg-bottom opacity-100"></div>
       )}
       <div className="relative z-10">
-        <div className="flex flex-col items-center text-center max-w-[400px] mx-auto mb-4 mt-[24px]">
-          <div className="flex items-center gap-2.5 text-[18px] text-[#24BC8A] font-medium leading-none">
+        <div className="flex flex-col items-center text-center w-full max-w-[96%] md:max-w-[60%] mx-auto mb-4 mt-[24px]">
+          <div className="flex items-center justify-center gap-2.5 text-[18px] text-[#24BC8A] font-medium leading-none whitespace-nowrap w-full">
           <img
             src={icon}
             alt={`${label} icon`}
@@ -280,7 +280,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           <h2>{label}</h2>
         </div>
         <div className="mt-3">
-          <h3 className="text-[40px] font-semibold leading-[42px]">
+          <h3 className="text-[28px] md:text-[36px] font-semibold leading-[32px] md:leading-[40px] w-full md:max-w-[75%] md:mx-auto">
             {label === "AI Audio" ? (
               <>
                 Listen to articles<br/>
@@ -288,7 +288,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
               </>
             ) : title}
           </h3>
-          <p className="text-base leading-[23px] mt-3 text-gray-600">
+          <p className="text-[14px] md:text-[16px] leading-[20px] md:leading-[24px] mt-3 text-gray-600 w-full md:max-w-[65%] md:mx-auto">
             {description}
           </p>
         </div>
@@ -297,7 +297,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
       <div className="relative max-w-[1200px] mx-auto mt-8">
         {singlePhoneLayout ? (
           <div className="flex justify-center relative mt-8">
-            <div className={`relative ${centerImage.includes('playlist') ? 'w-[340px] mx-auto translate-y-[220px] will-change-transform' : 'w-[475px] translate-x-[50px] translate-y-[220px] will-change-transform'}`} data-audio-phone={!centerImage.includes('playlist')} data-playlist-phone={centerImage.includes('playlist')}>
+            <div className={`relative ${centerImage.includes('playlist') ? 'w-[340px] md:w-[340px] mx-auto translate-y-[220px] will-change-transform' : 'w-[617px] md:w-[475px] translate-x-[35px] md:translate-x-[50px] translate-y-[220px] will-change-transform'}`} data-audio-phone={!centerImage.includes('playlist')} data-playlist-phone={centerImage.includes('playlist')}>
               {centerImage.includes('playlist') && (
                 <>
                   <div className="absolute -left-[340px] -top-[100px] opacity-0 transition-all duration-700 floating-image-1" data-floating>

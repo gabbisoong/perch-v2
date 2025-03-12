@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col items-stretch overflow-hidden">
       <div className="flex flex-col w-full items-center">
-        <div className="flex flex-col items-center -mb-[300px] mt-[-20px] md:mt-[20px]">
+        <div className="flex flex-col items-center -mb-[300px] mt-[35px] md:mt-[20px]">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/75a2afd5ddae8eb88d5bb2580c7eb64c7db72c458a302bd8eb8b73e7183d7ff9?placeholderIfAbsent=true"
             alt="Perch app icon"
