@@ -6,21 +6,21 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col items-stretch overflow-hidden">
       <div className="flex flex-col w-full items-center">
-        <div className="flex flex-col items-center -mb-[350px] mt-[100px]">
+        <div className="flex flex-col items-center -mb-[300px] mt-[-20px] md:mt-[20px]">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/75a2afd5ddae8eb88d5bb2580c7eb64c7db72c458a302bd8eb8b73e7183d7ff9?placeholderIfAbsent=true"
             alt="Perch app icon"
             className="aspect-[1] object-contain w-[63px] rounded-[16px]"
           />
-          <h2 className="text-black text-[45px] font-semibold leading-[45px] text-center mt-7 max-w-[450px] mx-auto max-md:text-[36px] max-md:leading-[42px]">
-            Try Perch out for yourself
+          <h2 className="text-black text-[45px] font-semibold leading-[45px] text-center mt-5 max-w-[450px] mx-auto max-md:text-[32px] max-md:leading-[38px]">
+            Try Perch out for<br />yourself
           </h2>
-          <div className="mt-7 w-[450px] max-w-full">
+          <div className="mt-5 w-[450px] max-w-[90%]">
             <AppStoreButtons />
           </div>
         </div>
-        <div className="flex flex-col items-center mt-[400px]">
-          <nav className="flex items-center gap-6 text-base text-[#666666] opacity-40 font-semibold whitespace-nowrap leading-none">
+        <div className="flex flex-col items-center mt-[370px] md:mt-[380px]">
+          <nav className="flex items-center gap-4 md:gap-6 text-sm md:text-base text-[#666666] opacity-40 font-semibold whitespace-nowrap leading-none">
             <Link
               to="/about"
               className="hover:text-[rgba(36,188,138,1)] hover:opacity-100 transition-all"
